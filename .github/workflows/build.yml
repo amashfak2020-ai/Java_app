@@ -28,8 +28,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn sonar:sonar \
-            -Dsonar.projectKey=Java_app \
-            -Dsonar.organization=your-org \
+            -Dsonar.projectKey=your-actual-project-key \
+            -Dsonar.organization=your-actual-org \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=$SONAR_TOKEN
 
